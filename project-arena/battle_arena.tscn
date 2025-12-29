@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://tlo3jtqahqcy"]
+
+[ext_resource type="Texture2D" uid="uid://dgujwb86tal4t" path="res://battle_arena_map.jpg" id="1_4t7g4"]
+
+[node name="BattleArena" type="Node2D"]
+
+[node name="Map" type="Sprite2D" parent="."]
+texture = ExtResource("1_4t7g4")
+centered = false
