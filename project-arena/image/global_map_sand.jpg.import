@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i01fcjeoxnlj"
-path="res://.godot/imported/global_map_hell.jpg-37a02b3f4f31d0d83f7a8da06b4bdd05.ctex"
+uid="uid://b0nevn0w6kj0e"
+path="res://.godot/imported/global_map_sand.jpg-d1a3b8d43834778789cf40a14e49a7f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://global_map_hell.jpg"
-dest_files=["res://.godot/imported/global_map_hell.jpg-37a02b3f4f31d0d83f7a8da06b4bdd05.ctex"]
+source_file="res://image/global_map_sand.jpg"
+dest_files=["res://.godot/imported/global_map_sand.jpg-d1a3b8d43834778789cf40a14e49a7f0.ctex"]
 
 [params]
 

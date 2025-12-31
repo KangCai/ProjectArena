@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqkmnjk1agee6"
-path="res://.godot/imported/global_map_ice.jpg-d64fa4ba74a308468afa673e8d2862da.ctex"
+uid="uid://m1hjxpafynex"
+path="res://.godot/imported/global_map_stone.jpg-8eacf5238d0c3b0dbdc89ec1557ac067.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://global_map_ice.jpg"
-dest_files=["res://.godot/imported/global_map_ice.jpg-d64fa4ba74a308468afa673e8d2862da.ctex"]
+source_file="res://image/global_map_stone.jpg"
+dest_files=["res://.godot/imported/global_map_stone.jpg-8eacf5238d0c3b0dbdc89ec1557ac067.ctex"]
 
 [params]
 

@@ -7,4 +7,5 @@ func _ready():
 		exit_button.pressed.connect(_on_exit_button_pressed)
 
 func _on_exit_button_pressed():
-	get_tree().quit()
+	# 切换回全局地图场景
+	get_tree().change_scene_to_file("res://global_map.tscn")

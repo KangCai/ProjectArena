@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://82rso4tlp28a"
-path="res://.godot/imported/global_map_grass.jpg-7d70bef7f323b93b39ea2204a1673873.ctex"
+uid="uid://dgujwb86tal4t"
+path="res://.godot/imported/battle_arena_map.jpg-20838446912568f8f57468c28f3d58b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://global_map_grass.jpg"
-dest_files=["res://.godot/imported/global_map_grass.jpg-7d70bef7f323b93b39ea2204a1673873.ctex"]
+source_file="res://image/battle_arena_map.jpg"
+dest_files=["res://.godot/imported/battle_arena_map.jpg-20838446912568f8f57468c28f3d58b6.ctex"]
 
 [params]
 
