@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf0ajjlwlijge"]
+
+[ext_resource type="Texture2D" uid="uid://82rso4tlp28a" path="res://global_map_grass.jpg" id="1_yyrao"]
+
+[node name="GlobalMap" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_yyrao")
+centered = false
