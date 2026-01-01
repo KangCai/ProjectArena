@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cf0ajjlwlijge"]
 
 [ext_resource type="Texture2D" uid="uid://drqfbeqgvuscf" path="res://image/global_map.jpg" id="1_global"]
-[ext_resource type="Script" uid="uid://cy18qanasvbkf" path="res://global_map.gd" id="2_global"]
+[ext_resource type="Script" uid="uid://cy18qanasvbkf" path="res://script/global_map.gd" id="2_global"]
 
 [node name="GlobalMap" type="Node2D"]
 script = ExtResource("2_global")
@@ -20,40 +20,40 @@ grow_vertical = 2
 
 [node name="GrassButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 50.0
-offset_right = 200.0
-offset_bottom = 100.0
+offset_left = 603.0
+offset_top = 847.0
+offset_right = 753.0
+offset_bottom = 897.0
 text = "草地地图"
 
 [node name="SandButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 120.0
-offset_right = 200.0
-offset_bottom = 170.0
+offset_left = 1226.0
+offset_top = 1046.0
+offset_right = 1376.0
+offset_bottom = 1096.0
 text = "沙地地图"
 
 [node name="StoneButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 190.0
-offset_right = 200.0
-offset_bottom = 240.0
+offset_left = 1214.0
+offset_top = 625.0
+offset_right = 1364.0
+offset_bottom = 675.0
 text = "石地地图"
 
 [node name="IceButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 260.0
-offset_right = 200.0
-offset_bottom = 310.0
+offset_left = 1159.0
+offset_top = 140.0
+offset_right = 1309.0
+offset_bottom = 190.0
 text = "冰地地图"
 
 [node name="HellButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 330.0
-offset_right = 200.0
-offset_bottom = 380.0
+offset_left = 1969.0
+offset_top = 573.0
+offset_right = 2119.0
+offset_bottom = 623.0
 text = "地狱地图"

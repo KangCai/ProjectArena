@@ -1,10 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://b67c34qy62v82"]
+[gd_scene load_steps=3 format=3 uid="uid://b67c34qy62v82"]
 
 [ext_resource type="Texture2D" uid="uid://i01fcjeoxnlj" path="res://image/global_map_hell.jpg" id="1_hell"]
+[ext_resource type="Script" uid="uid://c8m7i5b56yocw" path="res://script/global_map_hell.gd" id="2_hell"]
+
 
 [node name="GlobalMapHell" type="Node2D"]
+script = ExtResource("2_hell")
 
 [node name="Bg" type="Sprite2D" parent="."]
 texture = ExtResource("1_hell")
 centered = false
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 100.0
+text = "返回世界地图"
+
 

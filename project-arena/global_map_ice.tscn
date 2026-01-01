@@ -1,10 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://56b23px51vi1"]
+[gd_scene load_steps=3 format=3 uid="uid://56b23px51vi1"]
 
 [ext_resource type="Texture2D" uid="uid://bqkmnjk1agee6" path="res://image/global_map_ice.jpg" id="1_ice"]
+[ext_resource type="Script" uid="uid://b063wkt1i3sma" path="res://script/global_map_ice.gd" id="2_ice"]
 
 [node name="GlobalMapIce" type="Node2D"]
+script = ExtResource("2_ice")
 
 [node name="Bg" type="Sprite2D" parent="."]
 texture = ExtResource("1_ice")
 centered = false
 
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 100.0
+text = "返回世界地图"
