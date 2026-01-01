@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://cf0ajjlwlijge"]
 
-[ext_resource type="Texture2D" uid="uid://82rso4tlp28a" path="res://image/global_map_grass.jpg" id="1_yyrao"]
+[ext_resource type="Texture2D" uid="uid://drqfbeqgvuscf" path="res://image/global_map.jpg" id="1_global"]
 [ext_resource type="Script" uid="uid://cy18qanasvbkf" path="res://global_map.gd" id="2_global"]
 
 [node name="GlobalMap" type="Node2D"]
 script = ExtResource("2_global")
 
 [node name="Bg" type="Sprite2D" parent="."]
-texture = ExtResource("1_yyrao")
+texture = ExtResource("1_global")
 centered = false
 
 [node name="UI" type="Control" parent="."]
@@ -18,10 +18,42 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="BattleButton" type="Button" parent="UI"]
+[node name="GrassButton" type="Button" parent="UI"]
 layout_mode = 1
-offset_left = 810.0
-offset_top = 1028.0
-offset_right = 910.0
-offset_bottom = 1078.0
-text = "迪恩镇竞技场"
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 100.0
+text = "草地地图"
+
+[node name="SandButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 120.0
+offset_right = 200.0
+offset_bottom = 170.0
+text = "沙地地图"
+
+[node name="StoneButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 190.0
+offset_right = 200.0
+offset_bottom = 240.0
+text = "石地地图"
+
+[node name="IceButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 260.0
+offset_right = 200.0
+offset_bottom = 310.0
+text = "冰地地图"
+
+[node name="HellButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 330.0
+offset_right = 200.0
+offset_bottom = 380.0
+text = "地狱地图"

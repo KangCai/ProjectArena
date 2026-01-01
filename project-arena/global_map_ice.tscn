@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://56b23px51vi1"]
+
+[ext_resource type="Texture2D" uid="uid://bqkmnjk1agee6" path="res://image/global_map_ice.jpg" id="1_ice"]
+
+[node name="GlobalMapIce" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_ice")
+centered = false
+

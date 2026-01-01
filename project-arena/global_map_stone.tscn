@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0j5m4l6o7p8r"]
+
+[ext_resource type="Texture2D" uid="uid://m1hjxpafynex" path="res://image/global_map_stone.jpg" id="1_stone"]
+
+[node name="GlobalMapStone" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_stone")
+centered = false
+

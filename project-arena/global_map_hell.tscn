@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b67c34qy62v82"]
+
+[ext_resource type="Texture2D" uid="uid://i01fcjeoxnlj" path="res://image/global_map_hell.jpg" id="1_hell"]
+
+[node name="GlobalMapHell" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_hell")
+centered = false
+
