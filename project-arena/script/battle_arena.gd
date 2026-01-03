@@ -11,9 +11,9 @@ func _ready():
 
 func load_hero_character():
 	# 加载 SpriteFrames 资源
-	var sprite_frames = load("res://image/hero/hero_orc_1.tres") as SpriteFrames
+	var sprite_frames = load("res://image/hero/hero_orc_hammer.tres") as SpriteFrames
 	if not sprite_frames:
-		push_error("无法加载 hero_orc_1.tres 资源！")
+		push_error("无法加载 hero_orc_hammer.tres 资源！")
 		return
 	
 	# 创建 AnimatedSprite2D 节点
@@ -30,7 +30,7 @@ func load_hero_character():
 	add_child(animated_sprite)
 	
 	# 播放 run 动画
-	animated_sprite.play("run")
+	animated_sprite.play("attack")
 
 func _on_exit_button_pressed():
 	# 切换回全局地图场景

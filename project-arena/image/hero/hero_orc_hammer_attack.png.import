@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dobel8gb0ykkw"
-path="res://.godot/imported/hero_orc_1_run.png-6fdf92a806ef89bb8a220b9b0f80eb0c.ctex"
+uid="uid://dnjl6ul3swdse"
+path="res://.godot/imported/hero_orc_hammer_attack.png-9ae97b950d214e37e1f7b2fb642e0b9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/hero/hero_orc_1_run.png"
-dest_files=["res://.godot/imported/hero_orc_1_run.png-6fdf92a806ef89bb8a220b9b0f80eb0c.ctex"]
+source_file="res://image/hero/hero_orc_hammer_attack.png"
+dest_files=["res://.godot/imported/hero_orc_hammer_attack.png-9ae97b950d214e37e1f7b2fb642e0b9c.ctex"]
 
 [params]
 
