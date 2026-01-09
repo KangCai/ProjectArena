@@ -11,7 +11,7 @@ func _ready():
 
 func load_hero_character():
 	# 加载 SpriteFrames 资源
-	var sprite_frames = load("res://image/hero/hero_orc_hammer.tres") as SpriteFrames
+	var sprite_frames = load("res://image/hero/hero_undead_wuyao.tres") as SpriteFrames
 	if not sprite_frames:
 		push_error("无法加载 hero_orc_hammer.tres 资源！")
 		return
