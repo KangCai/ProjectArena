@@ -5,8 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://b6b2jouu5fyjt" path="res://image/gm_label.png" id="3_gm_label"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bxuqq"]
-font_size = 48
+font_size = 60
 font_color = Color(0, 0, 0, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(11.5, 5)
@@ -38,14 +40,15 @@ text = "返回世界地图"
 position = Vector2(857, 1059)
 
 [node name="Sprite2D" type="Sprite2D" parent="GmLabelArea"]
-scale = Vector2(0.50735307, 0.50735307)
+position = Vector2(3, -11)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_gm_label")
 
 [node name="GmLabelText" type="Label" parent="GmLabelArea/Sprite2D"]
-offset_left = -92.63762
-offset_top = -41.391228
-offset_right = 91.36238
-offset_bottom = 22.608772
+offset_left = -92.637634
+offset_top = -48.058228
+offset_right = 91.362366
+offset_bottom = 34.941772
 text = "角斗场"
 label_settings = SubResource("LabelSettings_bxuqq")
 horizontal_alignment = 1
