@@ -40,5 +40,7 @@ func _on_back_button_pressed():
 func _on_gm_label_input_event(_viewport: Node, event: InputEvent, _shape_idx: int):
 	# 检测鼠标左键点击
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		# 设置来源地图信息
+		get_tree().set_meta("source_map", "global_map_grass")
 		# 切换到战斗场景
 		get_tree().change_scene_to_file("res://battle_arena.tscn")

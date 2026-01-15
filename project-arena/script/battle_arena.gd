@@ -1,6 +1,14 @@
 extends Node2D
 
+# 记录当前 arena 属于哪个地图
+var source_map: String = ""
+
 func _ready():
+	# 从场景树获取来源地图信息
+	if get_tree().has_meta("source_map"):
+		source_map = get_tree().get_meta("source_map")
+		print("当前 arena 属于地图: ", source_map)
+	
 	# 获取退出按钮并连接信号
 	var exit_button = $UI/ExitButton
 	if exit_button:
@@ -33,5 +41,10 @@ func load_hero_character():
 	animated_sprite.play("run")
 
 func _on_exit_button_pressed():
-	# 切换回全局地图场景
-	get_tree().change_scene_to_file("res://global_map.tscn")
+	# 根据来源地图切换回对应的地图场景
+	if source_map != "":
+		var scene_path = "res://" + source_map + ".tscn"
+		get_tree().change_scene_to_file(scene_path)
+	else:
+		# 如果没有来源地图信息，默认返回全局地图
+		get_tree().change_scene_to_file("res://global_map.tscn")
