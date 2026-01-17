@@ -8,6 +8,7 @@ enum Faction {
 }
 
 # 英雄属性
+var guid: int = 0  # 唯一标识符
 var sprite_frames_path: String = ""
 var hero_name: String = ""
 var position_offset: Vector2 = Vector2.ZERO
@@ -25,8 +26,33 @@ func _init(p_sprite_frames_path: String, p_hero_name: String, p_position: Vector
 	animation_name = p_animation
 	faction = p_faction
 
+func _ready():
+	# 自动从 guid_mgr 获取 guid
+	_acquire_guid()
+
+# 从 guid_mgr 获取 guid
+func _acquire_guid():
+	# 向上查找场景树，找到包含 guid_mgr 的父节点（通常是 BattleArena）
+	var parent = get_parent()
+	while parent:
+		# 检查父节点是否有 guid_mgr 属性
+		if "guid_mgr" in parent:
+			var guid_manager = parent.guid_mgr
+			if guid_manager and guid_manager.has_method("get_next_guid"):
+				guid = guid_manager.get_next_guid()
+				return
+		parent = parent.get_parent()
+	
+	# 如果找不到 guid_mgr，使用时间戳作为临时 guid
+	push_warning("Hero " + hero_name + " 无法找到 guid_mgr，使用临时 guid")
+	guid = Time.get_ticks_msec()
+
 # 创建并设置英雄
 func setup():
+	# 确保 guid 已设置（如果 _ready() 还未执行，则现在获取）
+	if guid == 0:
+		_acquire_guid()
+	
 	# 加载 SpriteFrames 资源
 	var sprite_frames = load(sprite_frames_path) as SpriteFrames
 	if not sprite_frames:
