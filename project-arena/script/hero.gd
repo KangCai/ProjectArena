@@ -15,6 +15,14 @@ var position_offset: Vector2 = Vector2.ZERO
 var animation_name: String = "run"
 var faction: Faction = Faction.ALLY
 
+# 技能字典（key: 技能名, value: Spell 对象）
+var spell_dict: Dictionary = {}
+
+# 移动相关属性
+var move_speed: float = 200.0  # 移动速度（像素/秒）
+var move_target: Vector2 = Vector2.ZERO  # 移动目标位置（世界坐标）
+var is_moving: bool = false  # 是否正在移动
+
 # 动画精灵节点
 var animated_sprite: AnimatedSprite2D = null
 
@@ -25,6 +33,9 @@ func _init(p_sprite_frames_path: String, p_hero_name: String, p_position: Vector
 	position_offset = p_position
 	animation_name = p_animation
 	faction = p_faction
+	
+	# 初始化技能字典，创建默认攻击技能
+	spell_dict["atk"] = Spell.new(100.0)
 
 func _ready():
 	# 自动从 guid_mgr 获取 guid
@@ -88,6 +99,18 @@ func play_animation(anim_name: String):
 	animation_name = anim_name
 	if animated_sprite:
 		animated_sprite.play(anim_name)
+
+# 获取英雄当前位置（世界坐标）
+func get_hero_world_position() -> Vector2:
+	if animated_sprite:
+		return global_position + animated_sprite.position
+	return global_position
+
+# 移动指令：设置移动目标位置（不立即移动，由 move_system 处理）
+func move_pos(target_x: float, target_y: float):
+	move_target = Vector2(target_x, target_y)
+	is_moving = true
+	print("英雄 ", hero_name, " 设置移动目标: (", target_x, ", ", target_y, ")")
 
 # AI 逻辑处理（暂时用 print 打印）
 func process_ai():
