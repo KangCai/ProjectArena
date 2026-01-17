@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://i01fcjeoxnlj" path="res://image/global_map_hell.jpg" id="1_hell"]
 [ext_resource type="Script" uid="uid://c8m7i5b56yocw" path="res://script/global_map_hell.gd" id="2_hell"]
 
-
 [node name="GlobalMapHell" type="Node2D"]
 script = ExtResource("2_hell")
 
@@ -27,4 +26,26 @@ offset_right = 200.0
 offset_bottom = 100.0
 text = "返回世界地图"
 
+[node name="ToSandButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 74.0
+offset_top = 1335.0
+offset_right = 224.0
+offset_bottom = 1385.0
+text = "前往沙地"
 
+[node name="ToStoneButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 62.0
+offset_top = 700.0
+offset_right = 212.0
+offset_bottom = 750.0
+text = "前往石地"
+
+[node name="ToIceButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 55.0
+offset_top = 209.0
+offset_right = 205.0
+offset_bottom = 259.0
+text = "前往冰地"

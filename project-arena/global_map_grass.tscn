@@ -36,6 +36,30 @@ offset_right = 200.0
 offset_bottom = 100.0
 text = "返回世界地图"
 
+[node name="ToSandButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 2340.0
+offset_top = 1300.0
+offset_right = 2490.0
+offset_bottom = 1350.0
+text = "前往沙地"
+
+[node name="ToStoneButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 2348.0
+offset_top = 700.0
+offset_right = 2498.0
+offset_bottom = 750.0
+text = "前往石地"
+
+[node name="ToIceButton" type="Button" parent="UI"]
+layout_mode = 1
+offset_left = 2350.0
+offset_top = 54.0
+offset_right = 2500.0
+offset_bottom = 104.0
+text = "前往冰地"
+
 [node name="GmLabelArea" type="Area2D" parent="."]
 position = Vector2(857, 1059)
 
