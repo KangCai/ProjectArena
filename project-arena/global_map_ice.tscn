@@ -25,27 +25,3 @@ offset_top = 50.0
 offset_right = 200.0
 offset_bottom = 100.0
 text = "返回世界地图"
-
-[node name="ToGrassButton" type="Button" parent="UI"]
-layout_mode = 1
-offset_left = 112.0
-offset_top = 1309.0
-offset_right = 262.0
-offset_bottom = 1359.0
-text = "前往草地"
-
-[node name="ToStoneButton" type="Button" parent="UI"]
-layout_mode = 1
-offset_left = 1172.0
-offset_top = 1298.0
-offset_right = 1322.0
-offset_bottom = 1348.0
-text = "前往石地"
-
-[node name="ToHellButton" type="Button" parent="UI"]
-layout_mode = 1
-offset_left = 2333.0
-offset_top = 1314.0
-offset_right = 2483.0
-offset_bottom = 1364.0
-text = "前往地狱"
