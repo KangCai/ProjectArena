@@ -28,6 +28,14 @@ func process_move_system(delta: float, hero_dict: Dictionary):
 		
 		# 计算到目标位置的方向
 		var direction = (hero.move_target - current_pos).normalized()
+		# 根据移动方向翻转sprite（如果x为负数则反向）
+		if hero.animated_sprite:
+			if direction.x < 0:
+				# 向左移动，翻转sprite
+				hero.animated_sprite.scale.x = -1
+			elif direction.x > 0:
+				# 向右移动，正常方向
+				hero.animated_sprite.scale.x = 1
 		# 计算本帧可以移动的距离
 		var move_distance = delta * hero.move_speed
 		
