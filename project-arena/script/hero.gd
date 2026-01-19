@@ -112,6 +112,12 @@ func move_pos(target_x: float, target_y: float):
 	is_moving = true
 	print("英雄 ", hero_name, " 设置移动目标: (", target_x, ", ", target_y, ")")
 
+# 清除移动目标（停止移动）
+func clear_move_target():
+	move_target = Vector2.INF  # 使用 INF 表示空值
+	is_moving = false
+	print("英雄 ", hero_name, " 清除移动目标，原地不动")
+
 # AI 逻辑处理（暂时用 print 打印）
 func process_ai():
 	var faction_name = "我方" if faction == Faction.ALLY else "敌方"
