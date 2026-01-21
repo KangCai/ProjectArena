@@ -20,6 +20,7 @@ var heroes_per_frame: int = 1  # 每帧处理的英雄数量
 # 系统实例
 var move_system: Node = null
 var ai_system: Node = null
+var spell_system: Node = null
 
 func _ready():
 	# 创建并初始化 GUID 管理器
@@ -31,6 +32,8 @@ func _ready():
 	add_child(move_system)
 	ai_system = preload("res://script/system/ai_system.gd").new()
 	add_child(ai_system)
+	spell_system = preload("res://script/system/spell_system.gd").new()
+	add_child(spell_system)
 	
 	# 从场景树获取来源地图信息
 	if get_tree().has_meta("source_map"):
@@ -72,7 +75,8 @@ func load_hero_characters():
 # AI 系统 tick 逻辑（分帧处理）
 func _process(delta):
 	move_system.process_move_system(delta, hero_dict)
-	current_ai_index = ai_system.process_ai_system(hero_dict, current_ai_index, heroes_per_frame)
+	spell_system.process_spell_system(delta, hero_dict)
+	current_ai_index = ai_system.process_ai_system(hero_dict, current_ai_index, heroes_per_frame, spell_system)
 
 func _on_exit_button_pressed():
 	# 根据来源地图切换回对应的地图场景

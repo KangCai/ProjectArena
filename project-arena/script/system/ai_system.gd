@@ -1,7 +1,7 @@
 extends Node
 
 # AI 系统 tick 逻辑（分帧处理）
-func process_ai_system(hero_dict: Dictionary, current_ai_index: int, heroes_per_frame: int) -> int:
+func process_ai_system(hero_dict: Dictionary, current_ai_index: int, heroes_per_frame: int, spell_system: Node) -> int:
 	if hero_dict.size() == 0:
 		return current_ai_index
 	
@@ -35,7 +35,10 @@ func process_ai_system(hero_dict: Dictionary, current_ai_index: int, heroes_per_
 				if distance > attack_distance:
 					hero.move_pos(enemy_pos.x, enemy_pos.y)
 				else:
-					# 距离小于等于攻击距离，清除移动目标，原地不动
+					# 距离小于等于攻击距离，进行普攻
+					if spell_system:
+						spell_system.cast_spell(hero, "atk")
+					# 清除移动目标，原地不动
 					hero.clear_move_target()
 			else:
 				# 没有找到敌方单位，执行默认 AI 逻辑

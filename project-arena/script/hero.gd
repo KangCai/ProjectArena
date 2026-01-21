@@ -18,6 +18,11 @@ var faction: Faction = Faction.ALLY
 # 技能字典（key: 技能名, value: Spell 对象）
 var spell_dict: Dictionary = {}
 
+# 技能相关属性
+var cur_spell: String = ""  # 当前正在执行的技能名称（空字符串表示没有技能）
+var to_spell: String = ""  # 待执行的技能名称
+var spell_start_time: float = 0.0  # 当前技能开始执行的时间
+
 # 移动相关属性
 var move_speed: float = 200.0  # 移动速度（像素/秒）
 var move_target: Vector2 = Vector2.ZERO  # 移动目标位置（世界坐标）
@@ -35,7 +40,11 @@ func _init(p_sprite_frames_path: String, p_hero_name: String, p_position: Vector
 	faction = p_faction
 	
 	# 初始化技能字典，创建默认攻击技能
-	spell_dict["atk"] = Spell.new(100.0)
+	var atk_spell = Spell.new()
+	atk_spell.distance = 100.0
+	atk_spell.animation_name = "attack"
+	atk_spell.duration = 1.0
+	spell_dict["atk"] = atk_spell
 
 func _ready():
 	# 自动从 guid_mgr 获取 guid

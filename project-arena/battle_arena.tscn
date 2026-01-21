@@ -32,3 +32,35 @@ offset_bottom = 1428.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "逃跑"
+
+[node name="SwpanPos" type="Node" parent="."]
+
+[node name="SpawnPos_1_1" type="Node2D" parent="SwpanPos"]
+position = Vector2(515, 941)
+
+[node name="SpawnPos_1_2" type="Node2D" parent="SwpanPos"]
+position = Vector2(683, 1043)
+
+[node name="SpawnPos_1_3" type="Node2D" parent="SwpanPos"]
+position = Vector2(841, 1135)
+
+[node name="SpawnPos_1_4" type="Node2D" parent="SwpanPos"]
+position = Vector2(1005, 1210)
+
+[node name="SpawnPos_1_5" type="Node2D" parent="SwpanPos"]
+position = Vector2(1163, 1297)
+
+[node name="SpawnPos_2_1" type="Node2D" parent="SwpanPos"]
+position = Vector2(2030, 822)
+
+[node name="SpawnPos_2_2" type="Node2D" parent="SwpanPos"]
+position = Vector2(1818, 721)
+
+[node name="SpawnPos_2_3" type="Node2D" parent="SwpanPos"]
+position = Vector2(1638, 641)
+
+[node name="SpawnPos_2_4" type="Node2D" parent="SwpanPos"]
+position = Vector2(1472, 556)
+
+[node name="SpawnPos_2_5" type="Node2D" parent="SwpanPos"]
+position = Vector2(1315, 475)
