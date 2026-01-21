@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cf0ajjlwlijge"]
 
 [ext_resource type="Texture2D" uid="uid://drqfbeqgvuscf" path="res://image/global_map.jpg" id="1_global"]
-[ext_resource type="Script" uid="uid://cy18qanasvbkf" path="res://script/global_map.gd" id="2_global"]
+[ext_resource type="Script" uid="uid://cy18qanasvbkf" path="res://script/map/global_map.gd" id="2_global"]
 
 [node name="GlobalMap" type="Node2D"]
 script = ExtResource("2_global")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8h3k2j4m5n6p"]
 
 [ext_resource type="Texture2D" uid="uid://82rso4tlp28a" path="res://image/global_map_grass.jpg" id="1_grass"]
-[ext_resource type="Script" uid="uid://dyr7e50dlt0ux" path="res://script/global_map_grass.gd" id="2_grass"]
+[ext_resource type="Script" uid="uid://dyr7e50dlt0ux" path="res://script/map/global_map_grass.gd" id="2_grass"]
 [ext_resource type="Texture2D" uid="uid://b6b2jouu5fyjt" path="res://image/gm_label.png" id="3_gm_label"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bxuqq"]

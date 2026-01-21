@@ -24,7 +24,7 @@ var spell_system: Node = null
 
 func _ready():
 	# 创建并初始化 GUID 管理器
-	guid_mgr = preload("res://script/guid_mgr.gd").new()
+	guid_mgr = preload("res://script/manager/guid_mgr.gd").new()
 	add_child(guid_mgr)
 	
 	# 创建并初始化系统

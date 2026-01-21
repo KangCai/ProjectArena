@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d0j5m4l6o7p8r"]
 
 [ext_resource type="Texture2D" uid="uid://m1hjxpafynex" path="res://image/global_map_stone.jpg" id="1_stone"]
-[ext_resource type="Script" uid="uid://co40rghthvrx6" path="res://script/global_map_stone.gd" id="2_stone"]
+[ext_resource type="Script" uid="uid://co40rghthvrx6" path="res://script/map/global_map_stone.gd" id="2_stone"]
 
 
 [node name="GlobalMapStone" type="Node2D"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dai4l3k5n6o7q"]
 
 [ext_resource type="Texture2D" uid="uid://b0nevn0w6kj0e" path="res://image/global_map_sand.jpg" id="1_sand"]
-[ext_resource type="Script" uid="uid://gih1n818n0g" path="res://script/global_map_sand.gd" id="2_sand"]
+[ext_resource type="Script" uid="uid://gih1n818n0g" path="res://script/map/global_map_sand.gd" id="2_sand"]
 
 
 [node name="GlobalMapSand" type="Node2D"]
